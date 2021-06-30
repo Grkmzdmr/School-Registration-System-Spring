@@ -15,4 +15,7 @@ public interface LessonRepository extends JpaRepository<Lesson,Integer>, CrudRep
     List<Lesson> findByStudentLsAndTermmmm(Student student, Term term);
     @Query(value = "Select t.dersAd from Lesson t")
     List<String> dersad();
+
+    Lesson findLessonByDersAd(String lesson);
+
 }

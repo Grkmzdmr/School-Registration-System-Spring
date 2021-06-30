@@ -10,8 +10,9 @@ public interface DepartmantService {
     List<Departmant> getAll();
 
     Departmant save(Departmant departmant);
-
+    List<String> bolumAd();
     Departmant delete(Departmant departmant);
+    Departmant findDepartmantByBolumAd(String bolumad);
 
 }
 

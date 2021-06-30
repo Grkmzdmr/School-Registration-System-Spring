@@ -47,7 +47,8 @@ public class SuperuserListView extends VerticalLayout {
         Button btn4 = new Button("Dersler",VaadinIcon.BOOKMARK.create(),event-> UI.getCurrent().getPage().setLocation("/LessonPage"));
         Button btn6 = new Button("Dönemler",VaadinIcon.DATE_INPUT.create(),event-> UI.getCurrent().getPage().setLocation("/Terms"));
         Button btn7 = new Button("Ders Kaydı Raporu",VaadinIcon.RECORDS.create(),event-> UI.getCurrent().getPage().setLocation("/ReportPage"));
-        horizontalLayout.add(bt6,btn1,btn4,btn5,btn6,btn7);
+        Button btn8 = new Button("Bölüm Raporu",VaadinIcon.HOME.create(),event -> UI.getCurrent().getPage().setLocation("/DepartmantsReport"));
+        horizontalLayout.add(bt6,btn1,btn4,btn5,btn6,btn7,btn8);
         add(horizontalLayout1,horizontalLayout2,horizontalLayout);
 
 

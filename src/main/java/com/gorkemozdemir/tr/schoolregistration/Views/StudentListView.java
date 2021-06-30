@@ -146,6 +146,7 @@ public class StudentListView extends VerticalLayout {
             ConfirmDialog dialog = new ConfirmDialog("Kayıt silinsin mi ?", "Bu öğrenciyi sistemden silmek İstediğinize emin misiniz ?", "Sil",
                     confirmEvent -> {
                         studentService.delete(item);
+                        
                         refreshData();
                     },
                     "Vazgeç", cancelEvent -> {

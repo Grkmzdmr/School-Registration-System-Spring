@@ -1,11 +1,8 @@
 package com.gorkemozdemir.tr.schoolregistration.services;
 
 
-import com.gorkemozdemir.tr.schoolregistration.models.Lesson;
-import com.gorkemozdemir.tr.schoolregistration.models.Student;
+import com.gorkemozdemir.tr.schoolregistration.models.*;
 
-import com.gorkemozdemir.tr.schoolregistration.models.Teacher;
-import com.gorkemozdemir.tr.schoolregistration.models.Term;
 import com.gorkemozdemir.tr.schoolregistration.repositories.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -54,7 +51,18 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public List<String> findByLessons(Lesson lesson) {
+    public List<Student> findStudentByDepartmant(Departmant departmant) {
+        return this.studentRepository.findStudentByDepartmant(departmant);
+    }
+
+    @Override
+    public String countStudentByDepartmant(Departmant departmant) {
+        return this.studentRepository.countStudentByDepartmant(departmant);
+    }
+
+
+    @Override
+    public List<Student> findByLessons(Lesson lesson) {
         return this.studentRepository.findByLessons(lesson);
     }
 

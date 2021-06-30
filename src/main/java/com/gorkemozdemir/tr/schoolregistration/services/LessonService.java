@@ -14,5 +14,6 @@ public interface LessonService {
     List<Lesson> findByTeacherList1AndTermmmm(Teacher teacher,Term term);
     List<Lesson> findByStudentLsAndTermmmm(Student student, Term term);
     List<String> dersad();
+    Lesson findLessonByDersAd(String lesson);
 
 }

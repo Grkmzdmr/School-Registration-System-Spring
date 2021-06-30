@@ -26,12 +26,20 @@ public class DepartmantServiceImpl implements DepartmantService{
     }
 
     @Override
+    public List<String> bolumAd() {
+        return this.departmantRepository.bolumAd();
+    }
+
+    @Override
     public Departmant delete(Departmant departmant) {
         this.departmantRepository.deleteById(departmant.getBolumID());
         return departmant;
     }
 
-
+    @Override
+    public Departmant findDepartmantByBolumAd(String bolumad) {
+        return this.departmantRepository.findDepartmantByBolumAd(bolumad);
+    }
 
 
 }

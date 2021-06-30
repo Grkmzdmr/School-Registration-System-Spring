@@ -43,6 +43,10 @@ public class Student  {
     private List<Lesson> lessons;
 
 
+    @ManyToOne()
+    private Departmant departmant;
+
+
 
 
 }

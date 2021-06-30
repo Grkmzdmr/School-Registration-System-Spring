@@ -1,10 +1,7 @@
 package com.gorkemozdemir.tr.schoolregistration.services;
 
 
-import com.gorkemozdemir.tr.schoolregistration.models.Lesson;
-import com.gorkemozdemir.tr.schoolregistration.models.Student;
-import com.gorkemozdemir.tr.schoolregistration.models.Teacher;
-import com.gorkemozdemir.tr.schoolregistration.models.Term;
+import com.gorkemozdemir.tr.schoolregistration.models.*;
 
 import java.util.List;
 
@@ -14,6 +11,8 @@ public interface StudentService {
     void delete(Student student);
     Student login(String email, String password);
     List<Student> findByTeachersAndTermssds(Teacher teacher, Term term);
-    List<String > findByLessons(Lesson lesson);
+    List<Student> findStudentByDepartmant(Departmant departmant);
+    String countStudentByDepartmant(Departmant departmant);
+    List<Student > findByLessons(Lesson lesson);
 
 }

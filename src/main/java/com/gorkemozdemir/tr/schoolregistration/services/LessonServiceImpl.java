@@ -51,5 +51,10 @@ public class LessonServiceImpl implements LessonService{
         return this.lessonRepository.dersad();
     }
 
+    @Override
+    public Lesson findLessonByDersAd(String lesson) {
+        return this.lessonRepository.findLessonByDersAd(lesson);
+    }
+
 
 }
