@@ -20,6 +20,7 @@ public class SuperuserLogin extends VerticalLayout {
     HorizontalLayout horizontalLayout = new HorizontalLayout();
     HorizontalLayout horizontalLayout1 = new HorizontalLayout();
     public SuperuserLogin(SuperuserService superuserService){
+
         this.superuserService = superuserService;
         H1 text = new H1("YÖNETİCİ GİRİŞ EKRANI");
 

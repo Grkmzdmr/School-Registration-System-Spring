@@ -37,6 +37,7 @@ public class TermsView extends VerticalLayout {
     Integer itemIdForEdition5 = 0;
 
     public TermsView(TermService termService) {
+
         this.termService = termService;
 
 
@@ -91,7 +92,7 @@ public class TermsView extends VerticalLayout {
         grid.setSelectionMode(Grid.SelectionMode.NONE);
         grid.setColumns("donemId","donem");
         grid.addComponentColumn(item -> createRemoveButton(grid,item)).setHeader("İşlemler");
-        horizontalLayout1.add(new H2("Öğrenci Listesi"));
+        horizontalLayout1.add(new H2("Dönem Listesi"));
         horizontalLayout1.setWidth("100%");
         horizontalLayout1.getStyle().set("border","0px solid #9E9E9E");
         horizontalLayout1.setJustifyContentMode(JustifyContentMode.CENTER);

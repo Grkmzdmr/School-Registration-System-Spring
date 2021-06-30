@@ -40,6 +40,7 @@ public class SMyLessons extends VerticalLayout {
     HorizontalLayout horizontalLayout1 = new HorizontalLayout();
     public SMyLessons(TermService termService,TeacherService teacherService,LessonService lessonService){
 
+
         this.lessonService = lessonService;
         this.teacherService = teacherService;
         this.termService = termService;

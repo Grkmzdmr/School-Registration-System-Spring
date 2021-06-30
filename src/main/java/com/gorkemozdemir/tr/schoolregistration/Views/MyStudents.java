@@ -34,6 +34,7 @@ public class MyStudents extends VerticalLayout {
     HorizontalLayout horizontalLayout = new HorizontalLayout();
     HorizontalLayout horizontalLayout1 = new HorizontalLayout();
     public MyStudents(StudentService studentService,TermService termService,TeacherService teacherService){
+
         this.termService = termService;
         this.studentService = studentService;
         this.teacherService = teacherService;

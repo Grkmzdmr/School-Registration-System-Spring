@@ -26,6 +26,7 @@ public class SuperuserListView extends VerticalLayout {
 
     public SuperuserListView(SuperuserService superuserService){
 
+
         this.superuserService = superuserService;
         horizontalLayout1.setJustifyContentMode(JustifyContentMode.CENTER);
         horizontalLayout2.setWidth("100%");

@@ -20,6 +20,7 @@ public class TeacherLogin extends VerticalLayout {
     HorizontalLayout horizontalLayout = new HorizontalLayout();
     HorizontalLayout horizontalLayout1 = new HorizontalLayout();
     public TeacherLogin(TeacherService teacherService){
+
         this.teacherService = teacherService;
         H1 text = new H1("EĞİTMEN GİRİŞ EKRANI");
         H2 text1 = new H2("LÜTFEN GİRİŞ YAPMAK İÇİN BİLGİLERİNİZİ GİRİNİZ");

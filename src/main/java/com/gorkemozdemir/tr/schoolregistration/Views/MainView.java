@@ -29,6 +29,7 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 @Route
 public class MainView extends VerticalLayout {
     public MainView(){
+
         VerticalLayout verticalLayout = new VerticalLayout();
         HorizontalLayout layout = new HorizontalLayout();
         HorizontalLayout layout1 = new HorizontalLayout();

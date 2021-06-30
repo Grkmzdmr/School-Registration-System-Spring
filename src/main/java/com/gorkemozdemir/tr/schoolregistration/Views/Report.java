@@ -27,6 +27,7 @@ public class Report extends VerticalLayout {
     HorizontalLayout horizontalLayout1 = new HorizontalLayout();
     Grid<Student> studentGrid = new Grid<>(Student.class);
     public Report(LessonService lessonService,StudentService studentService){
+
         this.studentService = studentService;
         this.lessonService = lessonService;
         List<String> lessonlist = new ArrayList<>();

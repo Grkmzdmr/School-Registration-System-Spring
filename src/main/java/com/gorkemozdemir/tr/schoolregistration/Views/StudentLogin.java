@@ -20,6 +20,7 @@ public class StudentLogin extends VerticalLayout {
     HorizontalLayout horizontalLayout = new HorizontalLayout();
     HorizontalLayout horizontalLayout1 = new HorizontalLayout();
     public StudentLogin(StudentService studentService){
+
         this.studentService = studentService;
         H1 text = new H1("ÖĞRENCİ GİRİŞ EKRANI");
 

@@ -51,6 +51,7 @@ public class StudentListView extends VerticalLayout {
     HorizontalLayout horizontalLayout1 = new HorizontalLayout();
 
     public StudentListView(StudentService studentService,TermService termService){
+
         this.termService=termService;
         this.studentService = studentService;
 

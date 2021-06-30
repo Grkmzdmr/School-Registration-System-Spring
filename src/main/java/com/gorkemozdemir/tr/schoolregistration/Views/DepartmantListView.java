@@ -24,9 +24,11 @@ import java.util.ArrayList;
 import java.util.List;
 @Route("/Departmants")
 public class DepartmantListView extends VerticalLayout {
+
     private DepartmantService departmantService;
     Grid<Departmant> grid = new Grid<>(Departmant.class);
     public DepartmantListView(DepartmantService departmantService){
+
         this.departmantService = departmantService;
 
 

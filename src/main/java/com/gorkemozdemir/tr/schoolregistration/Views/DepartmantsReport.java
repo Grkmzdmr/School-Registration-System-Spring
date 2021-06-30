@@ -29,6 +29,7 @@ public class DepartmantsReport extends VerticalLayout {
     Grid<Student> studentGrid = new Grid<>(Student.class);
 
     public DepartmantsReport(DepartmantService departmantService, StudentService studentService){
+
         this.studentService = studentService;
         this.departmantService = departmantService;
         List<String> departmantList = new ArrayList<>();

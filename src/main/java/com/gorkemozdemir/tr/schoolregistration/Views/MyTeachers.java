@@ -26,6 +26,7 @@ public class MyTeachers extends VerticalLayout {
     Grid<Teacher> teacherGrid = new Grid<>(Teacher.class);
     HorizontalLayout horizontalLayout = new HorizontalLayout();
     public MyTeachers(TeacherService teacherService,TermService termService){
+
         this.termService = termService;
         this.teacherService = teacherService;
         refreshData();

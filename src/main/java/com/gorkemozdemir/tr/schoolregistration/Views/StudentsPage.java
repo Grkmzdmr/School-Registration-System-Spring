@@ -21,6 +21,7 @@ public class StudentsPage extends VerticalLayout {
 
     public StudentsPage(StudentService studentService){
 
+
         this.studentService = studentService;
         horizontalLayout1.setJustifyContentMode(FlexComponent.JustifyContentMode.CENTER);
         horizontalLayout2.setWidth("100%");

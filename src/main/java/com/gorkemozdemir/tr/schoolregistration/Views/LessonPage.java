@@ -38,6 +38,7 @@ public class LessonPage extends VerticalLayout {
 
     public LessonPage(LessonService lessonService){
 
+
         this.lessonService = lessonService;
 
 
